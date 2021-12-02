@@ -10,7 +10,7 @@ Our RNN implementations are mainly based on the Tensorflow based framework imple
 
 We use a temperature dataset of a lecture theatre of Monash University, Australia for our experiments and thus, we are not authorized to release the dataset.
 
-We first extracted the heating and cooling series separately from the temperature dataset. We then, preprocessed the extracted heating and cooling series using the scripts inside "./preprocess_scripts" folder. The preprocessed data were used to train 2 RNN models: one to model cooling and the other one to model heating. The hyperparameters of these heating and cooling RNNs were optimsied using the 2 commands mentioned in the script, "./temperature_experiments.sh". The cooling and heating RNNs related optimised parameters were respectively updated in "optimised_cooler.py" and "optimised_heater.py" scripts.
+We first extracted the heating and cooling series separately from the temperature dataset. We then, preprocessed the extracted heating and cooling series using the scripts inside "./preprocess_scripts" folder. The preprocessed data were used to train 2 RNN models: one to model cooling and the other one to model heating. The hyperparameters of these heating and cooling RNNs were optimsied using the 2 commands mentioned in the script, "./temperature_experiments.sh". The cooling and heating RNNs related optimised parameters were respectively updated in "optimized_cooler.py" and "optimized_heater.py" scripts.
 
 The AC optimisation process was started after tuning the parameters. For that, we mainly used 3 R scripts as follows:
  - start_time_finder.R: Find the optimal time point that the AC should be switched on in the morning in a way that it uses a minimum amount of energy to heat the room.
