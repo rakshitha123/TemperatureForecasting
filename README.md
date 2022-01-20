@@ -1,6 +1,6 @@
 # TemperatureForecasting
 
-This repository contains the experiments of our recent study related to the optimisation of Air Conditioning (AC) systems which is online available at: [https://arxiv.org/abs/2006.15296](https://arxiv.org/abs/2006.15296).
+This repository contains the experiments of our recent study related to the optimisation of Air Conditioning (AC) systems which is published at the [IEEE Access](https://doi.org/10.1109/ACCESS.2022.3142174).
 In this work, we introduce a deep learning framework that trains across time series that can forecast the temperatures of a future period directly where a particular room is unoccupied and optimises the setpoints of the room. In contrast to traditional forecasting approaches that build isolated models to predict each series, our framework uses
 global Recurrent Neural Network (RNN) models that are trained with a set of relatively short temperature series, allowing the models to learn the cross-series information. The predicted temperatures were then used to define the optimal thermal setpoints to be used inside the room during the unoccupied periods. 
 
@@ -17,7 +17,21 @@ The AC optimisation process was started after tuning the parameters. For that, w
  - optimizer_heating_cooling.R: Find the optimal time point that the AC should be switched on during an unoccupied period of a particular room.
  - current_monash_simulator_separate_models.R: Simulate the thermal behaviour inside a room in a way that it always maintains the inside temperature of the room within the given lower and upper setpoints.
 
-The individual parameters used by the scripts are explained within them. For more details, please refer to our [paper](https://arxiv.org/abs/2006.15296).
+The individual parameters used by the scripts are explained within them. For more details, please refer to our [paper](https://doi.org/10.1109/ACCESS.2022.3142174).
+
+
+# Citing Our Work
+When using this repository, please cite:
+
+```{r} 
+@article{godahewa2022energy,
+  title = {A Generative Deep Learning Framework Across Time Series to Optimise the Energy Consumption of Air Conditioning Systems},
+  author = {Godahewa, Rakshitha and Deng, Chang and Prouzeau, Arnaud and Bergmeir, Christoph},
+  journal = {IEEE Access},
+  year = {2022},
+  doi = {10.1109/ACCESS.2022.3142174}
+}
+```
 
 # References
 Hewamalage H., Bergmeir C., Bandara K. (2021) Recurrent neural networks for time series forecasting: Current status and future directions. International Journal of Forecasting DOI https://doi.org/10.1016/j.ijforecast.2020.06.008.
