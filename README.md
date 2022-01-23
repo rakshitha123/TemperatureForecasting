@@ -29,6 +29,8 @@ When using this repository, please cite:
   author = {Godahewa, Rakshitha and Deng, Chang and Prouzeau, Arnaud and Bergmeir, Christoph},
   journal = {IEEE Access},
   year = {2022},
+  volume={10},
+  pages={6842-6855},
   doi = {10.1109/ACCESS.2022.3142174}
 }
 ```
